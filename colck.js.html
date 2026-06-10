@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <h5 class="text-center">Bus Times</h5>
+    <div class="row text-center">
+        <div class="col"></div>
+        <div class="col mt-3">
+
+            <div class="card" style="width: 20  rem;">
+                <img src="public1/bus.jpeg" class="card-img-top" alt="bus">
+                <div class="card-body">
+                    <h2 id="clock"></h2>
+                    <script>
+                        setInterval(() => {
+                            let d = new Date();
+
+                            document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+            <p class="card-text">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Tiruppur</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">05:30 PM</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Chennai</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">02:45 PM</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Nagercoil</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">08:05 AM</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Thoothukudi</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">06:40 AM</div>
+                    </div>
+                </div>
+            </div>
+            </p>
+        </div>
+        <div class="col"></div>
+    </div>
+</body>
+
+</html>
